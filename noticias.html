@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias - ROUSOFT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <style>
+    .post {
+      display: flex;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #a854ff44;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(168, 84, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(168, 84, 255, 0.2);
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      margin-right: 1rem;
+      border: 2px solid #a854ff;
+      box-shadow: 0 0 6px rgba(168, 84, 255, 0.4);
+    }
+
+    .post-content {
+      flex: 1;
+    }
+
+    .post-header {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 0.4rem;
+    }
+
+    .post-header strong {
+      color: #fff;
+    }
+
+    .handle, .date {
+      color: #999;
+    }
+
+    .post p {
+      font-size: 1rem;
+      color: #eee;
+      line-height: 1.5;
+    }
+
+    .section-fade {
+      padding: 3rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="overlay"></div>
+
+  <header class="animated slide-in-top">
+    <div class="logo"><span class="logo-icon">R</span> ROUSOFT</div>
+    <nav id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="redes.html">Redes</a>
+      <a href="donar.html">Donar</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <main class="hero">
+    <div>
+      <h1 class="glitch" data-text="Noticias">Noticias</h1>
+      <p class="typewriter">Lo último de ROUSOFT, actualizado por su creador.</p>
+    </div>
+  </main>
+
+  <section class="section-fade" id="feed">
+
+    <div class="post">
+      <img src="rousoft-logo.png" alt="logo" class="avatar">
+      <div class="post-content">
+        <div class="post-header">
+          <strong>ROUSOFT</strong> <span class="handle">@rousoft_dev</span> · <span class="date">3 jul 2025</span>
+        </div>
+        <p>🎉 ¡Lanzamos la nueva sección de noticias estilo X! Aquí vas a poder ver todos los avances de ROUSOFT al instante. Más info pronto...</p>
+      </div>
+    </div>
+
+    <!-- 🔁 Plantilla para futuras publicaciones -->
+    <!--
+    <div class="post">
+      <img src="rousoft-logo.png" alt="logo" class="avatar">
+      <div class="post-content">
+        <div class="post-header">
+          <strong>ROUSOFT</strong> <span class="handle">@rousoft_dev</span> · <span class="date">[FECHA]</span>
+        </div>
+        <p>[MENSAJE AQUÍ]</p>
+      </div>
+    </div>
+    -->
+
+  </section>
+
+  <footer>
+    <p>© 2025 ROUSOFT - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

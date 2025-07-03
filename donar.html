@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donar - ROUSOFT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4c8f0d248f.js" crossorigin="anonymous"></script>
+  <style>
+    .donar-section {
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #eee;
+    }
+
+    .donar-section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #a854ff;
+    }
+
+    .donar-section p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .donar-buttons a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      background-color: #a854ff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .donar-buttons a:hover {
+      background-color: #7a34c9;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="overlay"></div>
+
+  <header class="animated slide-in-top">
+    <div class="logo"><span class="logo-icon">R</span> ROUSOFT</div>
+    <nav id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="redes.html">Redes</a>
+      <a href="donar.html">Donar</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <main class="hero">
+    <div>
+      <h1 class="glitch" data-text="Donar">Donar</h1>
+      <p class="typewriter">Tu apoyo ayuda a mantener vivo el proyecto. 💜</p>
+    </div>
+  </main>
+
+  <section class="donar-section section-fade">
+    <h2>¿Querés apoyar a ROUSOFT?</h2>
+    <p>Este proyecto es independiente, personal y totalmente libre. No es obligatorio donar, pero si querés colaborar, ¡te lo agradezco muchísimo! Toda contribución ayuda a mantener los servidores, mejorar herramientas, y seguir creando software libre, educativo y revolucionario.</p>
+    <div class="donar-buttons">
+      <a href="#"><i class="fab fa-paypal"></i> Donar con PayPal</a>
+      <a href="#"><i class="fab fa-patreon"></i> Donar en Patreon</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ROUSOFT - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

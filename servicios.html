@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - ROUSOFT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <style>
+    .servicio {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #a854ff33;
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 15px rgba(168, 84, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .servicio:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(168, 84, 255, 0.2);
+    }
+
+    .servicio h2 {
+      color: #a854ff;
+      margin-bottom: 1rem;
+    }
+
+    .servicio p {
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #a854ff;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #7a34c9;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="overlay"></div>
+
+  <header class="animated slide-in-top">
+    <div class="logo"><span class="logo-icon">R</span> ROUSOFT</div>
+    <nav id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="redes.html">Redes</a>
+      <a href="donar.html">Donar</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <main class="hero">
+    <div>
+      <h1 class="glitch" data-text="Servicios">Servicios</h1>
+      <p class="typewriter">Transformamos ideas en soluciones digitales a medida.</p>
+    </div>
+  </main>
+
+  <section class="section-fade servicio">
+    <h2>🌐 Creación de Sitios Web Profesionales</h2>
+    <p>Diseñamos y desarrollamos páginas web modernas, rápidas y completamente adaptadas a tus necesidades. Ya sea una landing page, portafolio, blog, sistema o e-commerce, te entregamos un producto visualmente impactante, responsive, optimizado y fácil de mantener.</p>
+    <p>Cada sitio que creamos es único, personalizado al 100%, sin plantillas genéricas. Usamos HTML, CSS, JavaScript y tecnologías actuales para asegurar rendimiento y estilo.</p>
+    <a href="redes.html" class="btn">Solicitar Sitio Web</a>
+  </section>
+
+  <section class="section-fade servicio">
+    <h2>🤖 Inteligencias Artificiales a Medida</h2>
+    <p>Desarrollamos IA personalizadas para automatizar tareas, analizar datos, generar contenido o ayudarte a innovar. Podemos construir asistentes virtuales, clasificadores, generadores, bots inteligentes y mucho más.</p>
+    <p>Desde pequeños modelos hasta arquitecturas más complejas, trabajamos de forma ética, responsable y alineada con tus objetivos reales.</p>
+    <a href="redes.html" class="btn">Crear una IA</a>
+  </section>
+
+  <section class="section-fade servicio">
+    <h2>🛠️ Software Exclusivo para Empresas</h2>
+    <p>¿Necesitás un sistema interno, herramienta privada o solución a medida? Creamos software personalizado desde cero, basado en tus necesidades reales. Aplicaciones de escritorio, sistemas web, paneles administrativos, motores internos, herramientas educativas o científicas.</p>
+    <p>Todo con arquitectura robusta, rendimiento óptimo y escalabilidad. Seguridad, control y exclusividad garantizada.</p>
+    <a href="redes.html" class="btn">Solicitar Software</a>
+  </section>
+
+  <footer>
+    <p>© 2025 ROUSOFT - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
