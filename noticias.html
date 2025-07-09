@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticias - Rousoft</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos específicos para noticias tipo timeline */
+    .timeline {
+      max-width: 700px;
+      margin: 3em auto;
+      padding: 0 1em;
+    }
+
+    .tweet {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 1.5em 2em;
+      margin-bottom: 1.5em;
+      box-shadow: 0 0 10px #00ccff44;
+      animation: fadeInUp 1s ease forwards;
+      position: relative;
+      border-left: 4px solid #00ccff;
+    }
+
+    .tweet:hover {
+      box-shadow: 0 0 20px #00ccffaa;
+      border-left-color: #0099dd;
+      cursor: default;
+    }
+
+    .tweet .fecha {
+      color: #00ccffaa;
+      font-size: 0.9em;
+      margin-bottom: 0.6em;
+      letter-spacing: 0.05em;
+    }
+
+    .tweet h4 {
+      color: #00ccff;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+      font-size: 1.3em;
+    }
+
+    .tweet p {
+      color: #ccc;
+      line-height: 1.5em;
+    }
+
+    .tweet-icon {
+      position: absolute;
+      top: 1.3em;
+      right: 1.5em;
+      font-size: 1.5em;
+      color: #00ccff55;
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      .timeline {
+        margin: 2em 1em;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1>Rousoft</h1>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="lilai.html">LilAI</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="redes.html">Redes</a>
+    <a href="donar.html">Donar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Últimas Noticias</h2>
+  <p>Todo lo que pasa en Rousoft, las novedades y avances de nuestros proyectos.</p>
+</section>
+
+<section class="timeline">
+  <article class="tweet">
+    <div class="tweet-icon">🐦</div>
+    <div class="fecha">2025-06-01</div>
+    <h4>Lanzamiento de la Página Web Oficial</h4>
+    <p>
+      ¡Emocionados de presentar la web oficial de Rousoft! Un espacio donde compartiremos tecnología con propósito, proyectos, servicios y más. 
+      Esta página es solo el comienzo.
+    </p>
+  </article>
+
+  <article class="tweet">
+    <div class="tweet-icon">🐦</div>
+    <div class="fecha">2025-06-15</div>
+    <h4>Versión 0.1.1 de ROULANG</h4>
+    <p>
+      Presentamos la versión 0.1.1 de ROULANG, nuestro lenguaje de programación en español. Ahora con impresión en pantalla y comentarios básicos.
+      ¡Un gran paso hacia la educación tecnológica!
+    </p>
+  </article>
+
+  <article class="tweet">
+    <div class="tweet-icon">🐦</div>
+    <div class="fecha">2025-07-01</div>
+    <h4>Inicio del Desarrollo de Kairon</h4>
+    <p>
+      Hemos comenzado el desarrollo de Kairon, nuestro motor de videojuegos 2D hecho en Java desde cero, con visión multiplataforma y gran rendimiento.
+    </p>
+  </article>
+
+  <article class="tweet">
+    <div class="tweet-icon">🐦</div>
+    <div class="fecha">2025-07-05</div>
+    <h4>Rousec: Lenguaje para Ciberseguridad</h4>
+    <p>
+      En progreso el lenguaje ROUSEC, diseñado exclusivamente para crear herramientas de ciberseguridad, enfocándonos en privacidad y anonimato.
+    </p>
+  </article>
+
+  <article class="tweet">
+    <div class="tweet-icon">🐦</div>
+    <div class="fecha">2025-07-09</div>
+    <h4>LilAI en Fase Beta 0.1</h4>
+    <p>
+      LilAI, nuestra IA experimental, ha entrado en fase beta. Actualmente es un prototipo, pero buscamos crear una IA cálida y cercana para educación y compañía digital.
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p>&copy; 2025 Rousoft - Tecnología con Propósito</p>
+  <p>
+    <a href="redes.html">Redes Sociales</a> |
+    <a href="donar.html">Apóyanos</a> |
+    <a href="contacto.html">Contacto</a>
+  </p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

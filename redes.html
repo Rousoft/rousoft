@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redes Sociales - Rousoft</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .redes-container {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+    }
+
+    .red-card {
+      background: #1e1e1e;
+      border-left: 5px solid #00ccff;
+      border-radius: 10px;
+      padding: 1.5em;
+      box-shadow: 0 0 10px #00ccff44;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      color: #f0f0f0;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    .red-card:hover {
+      box-shadow: 0 0 20px #00ccffaa;
+      border-left-color: #0099dd;
+    }
+
+    .red-icon {
+      font-size: 2em;
+      color: #00ccff;
+      user-select: none;
+    }
+
+    .red-info {
+      flex-grow: 1;
+    }
+
+    .red-name {
+      margin-bottom: 0.2em;
+    }
+
+    a.red-link {
+      color: #00ccff;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    a.red-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1>Rousoft</h1>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="lilai.html">LilAI</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="redes.html">Redes</a>
+    <a href="donar.html">Donar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Nuestras Redes Sociales</h2>
+  <p>Conecta con nosotros a través de las siguientes plataformas.</p>
+</section>
+
+<section class="redes-container">
+  <div class="red-card" onclick="window.open('https://github.com/roussoft', '_blank')">
+    <div class="red-icon">🐙</div>
+    <div class="red-info">
+      <div class="red-name">GitHub</div>
+      <a href="https://github.com/roussoft" class="red-link" target="_blank" rel="noopener noreferrer">github.com/roussoft</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://discord.gg/tu-invite', '_blank')">
+    <div class="red-icon">💬</div>
+    <div class="red-info">
+      <div class="red-name">Discord</div>
+      <a href="https://discord.gg/tu-invite" class="red-link" target="_blank" rel="noopener noreferrer">discord.gg/tu-invite</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://youtube.com/c/roussoft', '_blank')">
+    <div class="red-icon">▶️</div>
+    <div class="red-info">
+      <div class="red-name">YouTube</div>
+      <a href="https://youtube.com/c/roussoft" class="red-link" target="_blank" rel="noopener noreferrer">youtube.com/c/roussoft</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('mailto:contacto@roussoft.com', '_blank')">
+    <div class="red-icon">✉️</div>
+    <div class="red-info">
+      <div class="red-name">Correo Electrónico</div>
+      <a href="mailto:contacto@roussoft.com" class="red-link">contacto@roussoft.com</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://wa.me/1234567890', '_blank')">
+    <div class="red-icon">📱</div>
+    <div class="red-info">
+      <div class="red-name">WhatsApp</div>
+      <a href="https://wa.me/1234567890" class="red-link" target="_blank" rel="noopener noreferrer">+1 234 567 890</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://instagram.com/roussoft', '_blank')">
+    <div class="red-icon">📸</div>
+    <div class="red-info">
+      <div class="red-name">Instagram</div>
+      <a href="https://instagram.com/roussoft" class="red-link" target="_blank" rel="noopener noreferrer">instagram.com/roussoft</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://facebook.com/roussoft', '_blank')">
+    <div class="red-icon">📘</div>
+    <div class="red-info">
+      <div class="red-name">Facebook</div>
+      <a href="https://facebook.com/roussoft" class="red-link" target="_blank" rel="noopener noreferrer">facebook.com/roussoft</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://reddit.com/r/roussoft', '_blank')">
+    <div class="red-icon">👽</div>
+    <div class="red-info">
+      <div class="red-name">Reddit</div>
+      <a href="https://reddit.com/r/roussoft" class="red-link" target="_blank" rel="noopener noreferrer">reddit.com/r/roussoft</a>
+    </div>
+  </div>
+
+  <div class="red-card" onclick="window.open('https://discord.gg/tu-invite', '_blank')">
+    <div class="red-icon">💬</div>
+    <div class="red-info">
+      <div class="red-name">Discord (Alternativo)</div>
+      <a href="https://discord.gg/tu-invite" class="red-link" target="_blank" rel="noopener noreferrer">discord.gg/tu-invite</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Rousoft - Tecnología con Propósito</p>
+  <p>
+    <a href="redes.html">Redes Sociales</a> |
+    <a href="donar.html">Apóyanos</a> |
+    <a href="contacto.html">Contacto</a>
+  </p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
